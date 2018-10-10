@@ -29,8 +29,7 @@ ext {
 }
 
 dependencies {
-    implementation('org.springframework.cloud:spring-cloud-starter-eureka')
-    implementation('org.springframework.cloud:spring-cloud-starter-feign')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile("org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE",)
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
