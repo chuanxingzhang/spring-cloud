@@ -3,4 +3,4 @@ rootProject.name = 'spring-cloud'
 include("eureka-client")
 include("eureka")
 include("config-server")
-//include("feign-clent")
+include("feign-client")

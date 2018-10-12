@@ -19,12 +19,12 @@ public class EurekaClientApplication {
     @Value("${server.port}")
     String port;
     @RequestMapping("/hi")
-    public String home(@RequestParam String name) {
-        return "hi "+name+",i am from port:" +port;
+    public String home() {
+        return "hi ,i am from port:" +port;
     }
     @RequestMapping("/hi2")
-    public String home2(@RequestParam String name) {
-        return "hi "+name+",i am from port:" +port;
+    public String home2() {
+        return "hi i am from port:" +port;
     }
     public static void main(String[] args) {
         SpringApplication.run(EurekaClientApplication.class, args);
