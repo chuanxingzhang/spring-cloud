@@ -1,9 +1,10 @@
+server:
+   port: 8902
+
 #eureka:
 #   client:
 #      serviceUrl:
 #        defaultZone: http://192.168.25.12:8887/eureka/
-server:
-   port: 8902
 #spring:
 #   application:
 #      name: service-feign
@@ -12,5 +13,6 @@ server:
 #feign:
 #   hystrix:
 #     enabled: true
+#因为增加了apollo，所以去掉上面内容
 app.id: feign-client
 apollo.meta: http://192.168.25.111:8080
