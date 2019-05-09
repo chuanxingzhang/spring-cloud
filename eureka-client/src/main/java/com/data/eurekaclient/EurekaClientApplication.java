@@ -1,5 +1,6 @@
 package com.data.eurekaclient;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,12 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 @EnableEurekaClient
 @RestController
+@Slf4j
 public class EurekaClientApplication {
 
     @Value("${server.port}")
     String port;
     @RequestMapping("/hi")
     public String home() {
+        log.info("call  eureka-client  /hi");
         return "hi ,i am from port:" +port;
     }
     @RequestMapping("/hi2")
